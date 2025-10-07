@@ -1,27 +1,58 @@
-.header, .nav, .main, .sidebar, .advertisement, .footer{
+.header,
+.nav,
+.main,
+.sidebar,
+.advertisement,
+.footer {
   background-color: antiquewhite;
   border: 3px solid tomato;
   padding: 5px;
   border-radius: 10px;
 }
-.header{
+
+.header {
   grid-area: header;
 }
-.nav{
+
+.nav {
   grid-area: nav;
 }
-.main{
+
+.nav ul {
+  list-style: none;
+  padding: 0 50px 0 5px;
+}
+
+.nav ul li a {
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 600;
+  color: black;
+}
+
+.main {
   grid-area: main;
 }
-.sidebar{
+
+.sidebar {
   grid-area: sidebar;
 }
-.advertisement{
+
+.advertisement {
   grid-area: advertisement;
 }
-.footer{
+
+.footer {
   grid-area: footer;
 }
-.container{
 
+.container {
+  display: grid;
+  gap: 20px;
+  grid-template-areas: 
+  'header header header header header'
+  'nav main main main sidebar'
+  'nav main main main advertisement'
+  'footer footer footer footer footer'
+  ;
 }
