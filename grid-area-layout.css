@@ -1,0 +1,27 @@
+.header, .nav, .main, .sidebar, .advertisement, .footer{
+  background-color: antiquewhite;
+  border: 3px solid tomato;
+  padding: 5px;
+  border-radius: 10px;
+}
+.header{
+  grid-area: header;
+}
+.nav{
+  grid-area: nav;
+}
+.main{
+  grid-area: main;
+}
+.sidebar{
+  grid-area: sidebar;
+}
+.advertisement{
+  grid-area: advertisement;
+}
+.footer{
+  grid-area: footer;
+}
+.container{
+
+}
